@@ -1,0 +1,81 @@
+\documentclass[addpoints,a4paper]{exam}
+
+\usepackage{atuseexam}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{dsfont}
+\usepackage{mathtools}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{Math 115}{First Exam}{July 4, 1776}
+\runningheader  {Math 115}
+                {First Exam, Page \thepage\ of \numpages}
+                {July 4, 1776}
+\firstpagefooter{}{Page \thepage\ of \numpages}{}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\cover{Department of Software Engineering}
+\examname{A Standard Exam Template}
+\cname{Software Specification and Architecture}
+
+\ccode{2IW80, exam 2IW81}
+
+\date{May 1, 2021}
+\starttime{12:00}
+\etime{13:30}
+
+\qdescription{Maximum number of points/distribution of points over questions:100; Part I: 20 multiple choicequestions up to two points each; Part II: 4 modeling questions up to 20 points each. You shouldanswer at least three of these questions. Should you decide to answer four questions, we will considerthe three best solutions.}
+
+\oremarks{The exam questions have been inspected by Alexander Serebrenik, Kees Huizing,Sarmen Keshishzadeh and Anton Wijs.}
+
+\begin{document}
+
+\maketitle
+
+\begin{questions}
+
+    \question Is it true that \(x^n + y^n = z^n\) if \(x,y,z\) and \(n\) are positive integers?. Explain.
+    \vspace{\stretch{1}}
+    
+    \question Prove that the real part of all non-trivial zeros of the function \(\zeta(z)\) is \(\frac{1}{2}\)
+    \vspace{\stretch{1}}
+    
+    \question Compute \[\int_{0}^{\infty} \frac{\sin(x)}{x}\]
+    \vspace{\stretch{1}}
+    
+
+    \question Given the equation \(x^n + y^n = z^n\) for \(x,y,z\) and \(n\) positive integers. 
+    \begin{parts}
+        \part For what values of $n$ is the statement in the previous question true?
+        \vspace{3in}
+
+        \part For $n=2$ there's a theorem with a special name. What's that name?
+        \vspace{\stretch{1}}
+
+
+        \part What famous mathematician had an elegant proof for this theorem but
+        there was not enough space in the margin to write it down?
+        \vspace{\stretch{1}}
+
+        \begin{subparts}
+            \subpart Who actually proved the theorem?
+            \vspace{\stretch{1}}
+            \subpart How long did actually take to solve this problem?
+            \vspace{\stretch{1}}
+        \end{subparts}
+
+    \end{parts}
+
+    \question Prove that the real part of all non-trivial zeros of the function 
+    \(\zeta(z)\) is \(\frac{1}{2}\)
+
+    \question Write the Mandelbrot set algorithm.
+
+    \vspace{3in}
+
+    \end{questions}
+
+\end{document}

@@ -1,0 +1,112 @@
+\makeatletter
+\begin{coverpages}
+    \BgThispage
+    \begin{minipage}{0.48\textwidth}
+        \begin{flushleft}
+            \includegraphics[width=6cm]{images/atilim-logo.jpg}
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \makebox[\textwidth]{\uline{Student name: \hfill}}
+
+        \vspace{2mm}
+
+        \makebox[\textwidth]{\uline{Student number: \hfill}}
+
+        \vspace{2mm}
+
+        \makebox[\textwidth]{\uline{Signature: \hfill}}
+    \end{minipage}
+
+    \vspace*{2cm}
+
+    \begin{minipage}{0.7\textwidth}
+        \textcolor{white}{
+            \Huge\@cover\\[6mm]
+            \LARGE\@examname
+        }
+    \end{minipage}
+    \begin{minipage}{0.2\textwidth}
+        \begin{flushright}
+            \includegraphics[width=2.5cm]{images/guvenli-kampus.png}
+        \end{flushright}
+    \end{minipage}
+
+    \vspace*{2cm}
+
+    \begin{doublespace}
+        \noindent\makebox[0.6\textwidth]{\uline{Course name: \@cname \hfill}}
+        \makebox[0.39\textwidth]{\uline{Course Code: \@ccode \hfill}}
+
+        \noindent\uline{Date: \@date \hfill}
+
+        \noindent\makebox[0.6\textwidth]{\uline{Start time: \@starttime \hfill}}
+        \makebox[0.39\textwidth]{\uline{End time: \@endtime \hfill}}
+
+        \noindent\uline{Number of pages: \numpages \hfill}
+
+        \noindent\uline{Number of questions: \numquestions \hfill}
+
+        \noindent\parbox{\textwidth}{\singlespacing \@qdescription}
+        \vspace{2pt}\hrule
+        \noindent\parbox{\textwidth}{\singlespacing Other remarks: \@oremarks}
+        \vspace{2pt}\hrule
+    \end{doublespace}
+
+    \begin{center}
+        \Large \textbf{Grade Table}\\[3mm]
+        \normalsize\gradetable[h][questions]
+    \end{center}
+
+    \vspace{1cm}
+
+    \noindent\huge Instructions for students and proctors
+
+    \noindent\normalsize Permitted examination aids (\done means you can use, \wontfix means you cannot use):
+
+    \begin{todolist}[topsep=0pt]
+        \setlength\itemsep{0em}
+        \item[\wontfix] Notebook
+        \item[\done] Calculator
+        \item[\wontfix] Lecture notes/books
+        \item[\wontfix] Other:
+    \end{todolist}
+
+    \noindent\textcolor{red}{\rule{\textwidth}{2pt}}
+    \vspace{1mm}
+
+    \begin{minipage}{0.48\textwidth}
+        \begin{flushleft}
+            \footnotesize
+            Important:
+
+            \begin{coloritemize}[leftmargin=*, topsep=0pt]
+                \setlength\itemsep{-0.2em}
+                \item it is not permitted to leave the examination room within 20 minutes of the start of the examination, unless stated otherwise
+                \item examination scripts (fully completed examination paper, stating name, student number, etc.) must always be handed in
+                \item the house rules must be observed during the examination
+                \item the instructions of examiners and proctors must be followed
+                \item cell phones should be turned off and placed on tables facing down. 
+                \item examinees are not permitted to share examination aids or lend them to each other
+            \end{coloritemize}
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \begin{flushleft}
+            \footnotesize
+            The following actions will \textcolor{red}{in any case} be deemed to constitute fraud:
+
+            \begin{coloritemize}[leftmargin=*, topsep=0pt]
+                \setlength\itemsep{-0.2em}
+                \item using another person’s proof of identity/campus card (student identity card)
+                \item having a mobile telephone or any other type of media-carrying device in your clothes
+                \item using, or attempting to use, unauthorized resources and aids, such as the internet, a mobile telephone, etc.
+                \item having any paper at hand other than that provided by AU, unless stated otherwise
+                \item visiting the toilet (or going outside) without permission or supervision
+            \end{coloritemize}
+        \end{flushleft}
+    \end{minipage}
+    
+\end{coverpages}
+
+\makeatother

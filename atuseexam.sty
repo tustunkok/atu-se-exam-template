@@ -1,0 +1,67 @@
+\ProvidesPackage{atuseexam}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[normalem]{ulem}
+\usepackage[some]{background}
+\usepackage[pass]{geometry}
+\usepackage{pifont}
+
+\newcommand\cover[1]{\renewcommand\@cover{#1}}
+\newcommand\@cover{\@latex@error{No \noexpand\cover given}\@ehc}
+
+\newcommand\examname[1]{\renewcommand\@examname{#1}}
+\newcommand\@examname{\@latex@error{No \noexpand\examname given}\@ehc}
+
+\newcommand\cname[1]{\renewcommand\@cname{#1}}
+\newcommand\@cname{\@latex@error{No \noexpand\cname given}\@ehc}
+
+\newcommand\ccode[1]{\renewcommand\@ccode{#1}}
+\newcommand\@ccode{\@latex@error{No \noexpand\ccode given}\@ehc}
+
+\newcommand\starttime[1]{\renewcommand\@starttime{#1}}
+\newcommand\@starttime{\@latex@error{No \noexpand\starttime given}\@ehc}
+
+\newcommand\etime[1]{\renewcommand\@endtime{#1}}
+\newcommand\@endtime{\@latex@error{No \noexpand\etime given}\@ehc}
+
+\newcommand\qdescription[1]{\renewcommand\@qdescription{#1}}
+\newcommand\@qdescription{\@latex@error{No \noexpand\qdescription given}\@ehc}
+
+\newcommand\oremarks[1]{\renewcommand\@oremarks{#1}}
+\newcommand\@oremarks{\@latex@error{No \noexpand\oremarks given}\@ehc}
+
+\definecolor{titlepagecolor}{RGB}{0,162,222}
+
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\newlist{todolist}{itemize}{1}
+\setlist[todolist]{label=$\square$}
+
+\newlist{coloritemize}{itemize}{1}
+\setlist[coloritemize]{label=\textcolor{red}{\textbullet}}
+
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\backgroundsetup{
+    scale=1,
+    angle=0,
+    opacity=1,
+    contents={\begin{tikzpicture}[remember picture,overlay]
+    \path[fill=titlepagecolor](-0.5\paperwidth,7) rectangle (0.5\paperwidth,11);  
+    \end{tikzpicture}}
+}
+
+\renewcommand{\maketitle}{
+    \newgeometry{top=1cm, bottom=1cm, left=1cm, right=2cm}
+    \input{title}
+    \restoregeometry
+}
